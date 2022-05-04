@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex">
+
+    <div id="create-message" class="flex col card">
+        <form action="GET" class="form flex col ai-start w-100">
+            <label class="flex col ai-start w-100">
+                Make a Secret Message :
+                <input type="text" id="userInput">
+            </label>
+            <button type="submit" class="btn">Create</button>
+        </form>
+
+        <label class="show-link hide">
+            Share this link with your friend :
+            <input type="text">
+        </label>
+    </div>
+
+
+    <div id="show-message" class="hide flex col card w-100">
+        <h1></h1>
+        <a href="./index.html">Create your own secret message</a>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
